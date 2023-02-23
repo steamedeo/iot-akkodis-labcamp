@@ -35,6 +35,7 @@ void setup() {
   // connect to the IoT Hub MQTT broker
   wifiClient.connect(iotHubHost.c_str(), 8883);
   mqtt_client = new PubSubClient(iotHubHost.c_str(), 8883, wifiClient);
+  mqtt_client->setBufferSize(2048);
   connectMQTT(deviceId, username, sasToken);
 
   // initialize timers
