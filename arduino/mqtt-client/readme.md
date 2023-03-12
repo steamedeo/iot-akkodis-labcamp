@@ -1,1 +1,0 @@
-[Connect Arduino Uno Wifi to Azure IoT Hub by firedog1024](https://github.com/firedog1024/arduino-uno-wifi-iotc)
